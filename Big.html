@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      .gradient-bg {
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex">
+            <div class="flex-shrink-0 flex items-center">
+              <span class="text-xl font-bold text-purple-600">CryptoPro</span>
+            </div>
+            <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+              <a
+                href="#home"
+                class="border-purple-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="#services"
+                class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >Services</a
+              >
+              <a
+                href="#pricing"
+                class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >Pricing</a
+              >
+              <a
+                href="#about"
+                class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >About</a
+              >
+              <a
+                href="#contact"
+                class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="hidden sm:ml-6 sm:flex sm:items-center">
+            <button
+              class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+              Get Started
+            </button>
+          </div>
+          <div class="-mr-2 flex items-center sm:hidden">
+            <button
+              id="menu-toggle"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
+              <span class="sr-only">Open main menu</span>
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden sm:hidden">
+        <div class="pt-2 pb-3 space-y-1">
+          <a
+            href="#home"
+            class="bg-purple-50 border-purple-500 text-purple-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+            >Home</a
+          >
+          <a
+            href="#services"
+            class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+            >Services</a
+          >
+          <a
+            href="#pricing"
+            class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+            >Pricing</a
+          >
+          <a
+            href="#about"
+            class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+            >About</a
+          >
+          <a
+            href="#contact"
+            class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+            >Contact</a
+          >
+          <div class="mt-4 pl-3">
+            <button
+              class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-medium w-full">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="md:flex md:items-center md:justify-between">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+              Professional Crypto Trading Services
+            </h1>
+            <p class="text-xl mb-8">
+              Maximize your cryptocurrency investments with our expert freelance
+              trading strategies and portfolio management.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <button
+                class="bg-white text-purple-600 hover:bg-gray-100 px-6 py-3 rounded-md text-lg font-semibold">
+                Start Trading
+              </button>
+              <button
+                class="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-6 py-3 rounded-md text-lg font-semibold">
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80"
+              alt="Crypto Trading"
+              class="rounded-lg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section id="services" class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Our Trading Services
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <div class="text-purple-600 mb-4">
+              <i class="fas fa-chart-line text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Portfolio Management</h3>
+            <p class="text-gray-600">
+              Let our experts manage your crypto portfolio with proven
+              strategies to maximize returns while minimizing risks.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <div class="text-purple-600 mb-4">
+              <i class="fas fa-bolt text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Algorithmic Trading</h3>
+            <p class="text-gray-600">
+              Automated trading bots that execute trades 24/7 based on technical
+              indicators and market conditions.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <div class="text-purple-600 mb-4">
+              <i class="fas fa-graduation-cap text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Trading Education</h3>
+            <p class="text-gray-600">
+              Learn professional trading techniques through our personalized
+              coaching sessions and educational materials.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <div class="text-purple-600 mb-4">
+              <i class="fas fa-shield-alt text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Risk Management</h3>
+            <p class="text-gray-600">
+              Implement advanced risk management strategies to protect your
+              capital in volatile crypto markets.
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <div class="text-purple-600 mb-4">
+              <i class="fas fa-robot text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Custom Bot Development</h3>
+            <p class="text-gray-600">
+              Tailor-made trading bots designed specifically for your trading
+              style and risk tolerance.
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+            <div class="text-purple-600 mb-5">
+              <i class="fas fa-search-dollar text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Market Analysis</h3>
+            <p class="text-gray-600">
+              In-depth technical and fundamental analysis reports to help you
+              make informed trading decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:flex lg:items-center lg:justify-between">
+          <div class="lg:w-1/2 mb-10 lg:mb-0">
+            <h2 class="text-3xl font-bold mb-6">About Our Trading Team</h2>
+            <p class="text-gray-600 mb-6">
+              Our team consists of professional traders with over 10 years of
+              combined experience in cryptocurrency markets. We've navigated
+              multiple market cycles and developed strategies that perform in
+              both bull and bear markets.
+            </p>
+            <p class="text-gray-600 mb-6">
+              We combine technical analysis, fundamental research, and on-chain
+              metrics to identify high-probability trading opportunities while
+              strictly managing risk.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <div class="flex items-center">
+                <div class="bg-purple-100 p-3 rounded-full mr-3">
+                  <i class="fas fa-chart-pie text-purple-600"></i>
+                </div>
+                <span class="font-medium">5,000+ Trades Executed</span>
+              </div>
+              <div class="flex items-center">
+                <div class="bg-purple-100 p-3 rounded-full mr-3">
+                  <i class="fas fa-users text-purple-600"></i>
+                </div>
+                <span class="font-medium">150+ Satisfied Clients</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2 lg:pl-12">
+            <div class="bg-white p-8 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-4">Our Trading Philosophy</h3>
+              <div class="space-y-4">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600">
+                      <i class="fas fa-chess-knight"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-medium">Strategic Approach</h4>
+                    <p class="text-gray-600 mt-1">
+                      We focus on high-probability setups with favorable
+                      risk/reward ratios rather than chasing every market move.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600">
+                      <i class="fas fa-shield-alt"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-medium">Risk Management</h4>
+                    <p class="text-gray-600 mt-1">
+                      We never risk more than 1-2% of capital on any single
+                      trade and use stop-loss orders to protect against large
+                      drawdowns.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600">
+                      <i class="fas fa-brain"></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-medium">Disciplined Execution</h4>
+                    <p class="text-gray-600 mt-1">
+                      Emotions are the enemy of trading success. We follow our
+                      systems with discipline regardless of market conditions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+          <div class="mb-12 lg:mb-0">
+            <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+            <p class="text-gray-600 mb-8">
+              Have questions about our services or want to discuss your specific
+              trading needs? Reach out to us and we'll get back to you within 24
+              hours.
+            </p>
+            <div class="space-y-6">
+              <!-- first: Email -->
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium">Email Us</h3>
+                  <p class="text-gray-600">support@cryptopro.com</p>
+                </div>
+              </div>
+              <!-- second: call us -->
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium">Call Us</h3>
+                  <p class="text-gray-600">+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <!-- third: visit us -->
+              <div class="flex items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium">Visit Us</h3>
+                  <p class="text-gray-600">123 Crypto Street, Digital City</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <!-- send us message -->
+            <h3 class="text-xl font-bold mb-6">Send Us a Message</h3>
+            <form id="contact-form">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-medium mb-2"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  required />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-medium mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  required />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="service"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Service Interested In</label
+                >
+                <select
+                  id="service"
+                  name="service"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                  <option value="portfolio">Portfolio Management</option>
+                  <option value="algorithmic">Algorithmic Trading</option>
+                  <option value="education">Trading Education</option>
+                  <option value="custom">Custom Bot Development</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label
+                  for="message"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  required></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple-600 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- crypto pro -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">CryptoPro</h3>
+            <p class="text-white">
+              Professional cryptocurrency trading services to help you navigate
+              volatile markets and maximize returns.
+            </p>
+            <div class="space-x-4 mt-6">
+              <a href="#" class="text-gray-200 hover:text-white">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-gray-200 hover:text-white">
+                <i class="fab fa-telegram"></i>
+              </a>
+              <a href="#" class="text-gray-200 hover:text-white">
+                <i class="fab fa-discord"></i>
+              </a>
+              <a href="#" class="text-gray-200 hover:text-white">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <!-- services -->
+            <h4 class="text-lg font-bold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Portfolio Management</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Algorithmic Trading</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Trading Education</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Risk Management</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Custom Bot Development</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <!-- Resources -->
+            <h4 class="text-lg font-semibold mb-4">Resources</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Market Analysis</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Trading Guides</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <!-- legal -->
+            <h4 class="text-lg font-semibold mb-4">Legal</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Risk Disclosure</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Disclaimer</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-black mt-12 pt-12 flex flex-col md:flex-row justify-between">
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" class="text-gray-400 hover:text-white">Terms</a>
+            <a href="#" class="text-gray-400 hover:text-white">Privacy</a>
+            <a href="#" class="text-gray-400 hover:text-white">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
